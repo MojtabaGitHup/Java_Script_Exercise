@@ -1,0 +1,84 @@
+    <!--
+        Project: JS Simple Calculater
+        Created By: Mojtaba Kamal :)
+        Date: 2018/8/25
+        About me :Csharp databas application ,full stack Web Dev.
+        Telegram_account: https://t.me/MKk_4
+    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Calculater </title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        body {
+            background-color: #454545;
+        }
+        #container{
+            margin-top: 15px;
+            background-color: #DEDEDE;
+            width: 600px;
+            height: 620px;
+            border-radius: 30px;
+            text-align: center;
+        }
+        input {
+                width: 120px;
+                height: 75px;
+                font-size:75px;
+                border-radius: 10px;
+                margin: 8px;
+                background-color:#000;
+                color: #fff;
+                border-style:none;
+            }       
+            #calform{
+                
+            }
+            h1 {
+                height: 75px;
+                border-top-left-radius:20px ;
+                border-top-right-radius: 20px;
+                text-align: center;
+                font-size: 60px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                color: navy;
+                background-color: #E3B34F;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <h1>Simple Calculater</h1>
+        <form id="calform" name="cal">
+            <input name="display" style="width:550px; height:100px; text-align: center; background-color:#4F7FE3 "><br>
+            <input type="button" value="1" onclick="cal.display.value+='1'" >
+            <input type="button" value="2" onclick="cal.display.value+='2'">
+            <input type="button" value="3" onclick="cal.display.value+='3'">
+            <input type="button" value="+" onclick="cal.display.value+='+'" style="background-color:rgb(231, 68, 128) "><br>
+
+            <input type="button" value="4" onclick="cal.display.value+='4'">
+            <input type="button" value="5" onclick="cal.display.value+='5'">
+            <input type="button" value="6" onclick="cal.display.value+='6'">
+            <input type="button" value="-" onclick="cal.display.value+='-'" style="background-color:#4FE369 "><br>
+
+            <input type="button" value="7" onclick="cal.display.value+='7'">
+            <input type="button" value="8" onclick="cal.display.value+='8'">
+            <input type="button" value="9" onclick="cal.display.value+='9'">
+            <input type="button" value="/" onclick="cal.display.value+='1/" style="background-color:#E34FC9 "><br>
+
+            <input type="button" value="C" onclick="cal.display.value=''" style="background-color: #28D2DE">
+            <input type="button" value="0" onclick="cal.display.value+='0'">
+            <input type="button" value="=" onclick="cal.display.value= eval(cal.display.value)"style="background-color: #363636;">
+            <input type="button" value="x" onclick="cal.display.value+='*'" style="background-color:#E3B34F ">
+        </form>
+    </div>
+</body>
+</html>
